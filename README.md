@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="tourista" src="" />
+    <img alt="tourista" src="./Imagens_Tourista/Logo_Tourista.jpg"/>
 </h1>
 
 
@@ -50,4 +50,8 @@ O projeto foi desenvolvido a partir das seguintes tarefas:
 
 
 ## 💻 Requisitos
+
+1. Fluxograma
+2. Python
+3. CRUD
 
