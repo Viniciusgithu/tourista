@@ -1,15 +1,25 @@
+
+# ARQUIVO DE BASE DE DADOS SOBRE OS LOCAIS TURÍSTICOS
+
+
 pontos_turisticos = {
     "Recife": {
         "nome": "Recife Antigo",
         "descricao": "Centro histórico com muitos bares e restaurantes.",
         "horario_funcionamento": "24 horas",
         "custo_entrada": "Gratuito"
+        # avaliacao_do_visitante
+        # imagem
+        # restaurantes_famosos
+        # monumentos
+        # parques
     },
     "Olinda": {
         "nome": "Alto da Sé",
         "descricao": "Local histórico com uma vista panorâmica da cidade.",
         "horario_funcionamento": "6h às 18h",
-        "custo_entrada": "Gratuito"
+        "custo_entrada": "Gratuito",
+    
     },
     "Peru": {
         "nome": "Machu Picchu",
@@ -48,15 +58,3 @@ pontos_turisticos = {
         "custo_entrada": "Gratuito para visualização externa"
     }
 }
-
-
-local = input("Digite um local: ")
-
-if local in pontos_turisticos:
-    ponto_turistico = pontos_turisticos[local]
-    print(f"Nome: {ponto_turistico['nome']}")
-    print(f"Descrição: {ponto_turistico['descricao']}")
-    print(f"Horário de Funcionamento: {ponto_turistico['horario_funcionamento']}")
-    print(f"Custo de Entrada: {ponto_turistico['custo_entrada']}")
-else:
-    print("Desculpe, não temos informações sobre este local.")
