@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="tourista" src="./Imagens_Tourista/Logo_Tourista.jpg"/>
+    <img alt="tourista" src="./Public/Logo_Tourista.jpg"/>
 </h1>
 
 
@@ -42,16 +42,33 @@ O projeto foi desenvolvido a partir das seguintes tarefas:
 - [x] Definir modelos de dados - por exemplo, pontos turísticos, avaliações, perfis de usuários;
 - [x] Definir modelos de dados - por exemplo, pontos turísticos, avaliações, perfis de usuários;
 - [x] Desenvolver o documento de requisitos;
-- [] Desenvolver os componentes do sistema;
-- [] Definir o time de arquitetura a ser implementada;
-- [] Revisão do código e corrigir possíveis problemáticas;
-- [] Apresentação do SR2.
+- [ ] Desenvolver os componentes do sistema;
+- [ ] Definir o time de arquitetura a ser implementada;
+- [ ] Revisão do código e corrigir possíveis problemáticas;
+- [ ] Apresentação do SR2.
 
 
 
-## 💻 Requisitos
+## ⚙ Tecnologias Utilizadas
 
-1. Fluxograma
-2. Python
-3. CRUD
+| Categoria                   | Tecnologia                                                                           |
+|-----------------------------|--------------------------------------------------------------------------------------|
+| *Linguagem de Programação*  | <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python Logo" style="border-radius: 5px;"> |
+| *Armazenamento de dados*            | <img src="https://img.shields.io/badge/JSON-8A2BE2" alt="JSON" style="border-radius: 5px;"> |
+| *Gerenciamento de Projetos* | ![Trello](https://img.shields.io/badge/Trello-%23026AA7.svg?style=for-the-badge&logo=Trello&logoColor=white) |
+
+
+<h2>👥 Equipe Tourista</h2>
+<ul>
+    <li>Arllesson Gomes da Silva</li>
+    <li>Arthur Rodrigues de Andrade Lima</li>
+    <li>Hugo de Lima
+Ponciano Costa</li>
+    <li>Marcello Fernandes de Lima</li>
+    <li>Vinicius Lima Pazos</li>
+    <li>Yuri Ricardo
+Albuquerque de França</li> 
+</ul>
+
+
 
