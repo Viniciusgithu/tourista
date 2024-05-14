@@ -1,0 +1,20 @@
+
+
+1. Qual arquitetura podemos utilizar? MVP ? 
+2. Qual paradigma iremos utilizar? Procedural? Funcional, Orientação a objetos?
+3. Utilizar a bilioteca hashlib para criptografar a senha (aprofundar na bilioteca)
+4. Como utilizar Try / Except em Python?
+5. if __name__ == "__main__":
+    main()
+
+
+Padrão commit: 
+  https://github.com/iuricode/padroes-de-commits
+
+
+Documentações:
+
+Como manipular arquivos: 
+  [1] https://blog.rocketseat.com.br/como-ler-informacoes-de-arquivos-com-python/
+
+  [2] https://diegomariano.com/manipulando-arquivos/
