@@ -1,1 +1,45 @@
-
+#Classe que representa uma cidade
+class Cidades:
+    def __init__(self, nome, estado, descricao):
+        self.nome = nome
+        self.estado = estado
+        self.descricao = descricao
+        self.pontos_turisticos = []  #Lista para armazenar pontos turísticos
+    # faz retornar uma string formatada com os detalhes da cidade
+    def __str__(self):
+        return (f"Nome: {self.nome}\nEstado: {self.estado}\n"
+                f"Descrição: {self.descricao}\nNúmero de Pontos Turísticos: {len(self.pontos_turisticos)}")
+    #serve para adicionar um ponto turístico à cidade
+    def adicionar_ponto_turistico(self, ponto_turistico):
+        self.pontos_turisticos.append(ponto_turistico)
+    #Lista todos os pontos turísticos cadastrados na cidade
+    def listar_pontos_turisticos(self):
+        if not self.pontos_turisticos:
+            print("\nNenhum ponto turístico cadastrado.\n")
+        else:
+            for idx, ponto in enumerate(self.pontos_turisticos, start=1):
+                print(f"\nPonto Turístico {idx}:\n{ponto}\n")
+    # Método para buscar pontos turísticos pelo nome
+    def buscar_ponto_turistico(self, nome):
+        encontrados = [ponto for ponto in self.pontos_turisticos if ponto.nome.lower() == nome.lower()]
+        return encontrados
+# Classe que representa um ponto turístico
+class PontoTuristico:
+    def __init__(self, nome, descricao, endereco, horario_funcionamento):
+        self.nome = nome
+        self.descricao = descricao
+        self.endereco = endereco
+        self.horario_funcionamento = horario_funcionamento
+    #retorna uma string com os detalhes do ponto turístico
+    def __str__(self):
+        return f"Nome: {self.nome}\nDescrição: {self.descricao}\nEndereço: {self.endereco}\nHorário de Funcionamento: {self.horario_funcionamento}"
+    #editar as informações do ponto turístico
+    def editar(self, nome=None, descricao=None, endereco=None, horario_funcionamento=None):
+        if nome:
+            self.nome = nome
+        if descricao:
+            self.descricao = descricao
+        if endereco:
+            self.endereco = endereco
+        if horario_funcionamento:
+            self.horario_funcionamento = horario_funcionamento
