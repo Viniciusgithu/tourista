@@ -1,8 +1,14 @@
-# main.py: Este é o arquivo principal do seu aplicativo, onde você instancia e executa o controller.
 
+import sys
+sys.path.append('controller')
+sys.path.append('view')
+sys.path.append('model')
 
-from Controller import Controller
+from Controller import GerenciadorArquivosController
 
 if __name__ == "__main__":
-    controller = Controller()
-    controller.executar()
+    gerenciador = GerenciadorArquivosController()
+    gerenciador.menu()
+    
+
+

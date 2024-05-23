@@ -1,0 +1,10 @@
+{
+   "usuarios": [
+      {
+         "nome_usuario": "Arthur",
+         "senha": "321",
+         "palavra_chave": "Andrade",
+         "genero": "Masculino"
+      }
+   ]
+}
