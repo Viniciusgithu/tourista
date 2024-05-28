@@ -5,11 +5,19 @@
 # Lida com a interface do usuário;
 # Apresenta os dados de uma maneira que seja compreensível e interativa.
 
+class AvaliacoesUsuarioView:
+    @staticmethod
+    def show_reviews(reviews):
+        if reviews:
+            for review in reviews:
+                print(review)
+        else:
+            print('Nenhuma avaliação encontrada para a cidade.')
 
-def exibir_menu():
-    print("MENU COM AS PRINCIPAIS OPÇÕES VISÍVEIS PARA O TURISTA")
+    @staticmethod
+    def show_success(message):
+        print(message)
 
-def solicitar_login():
-    nome = input("Digite seu nome de usuário: ")
-    senha = input("Digite sua senha: ")
-    return nome, senha
+    @staticmethod
+    def show_error(message):
+        print(message)
