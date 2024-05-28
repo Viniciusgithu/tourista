@@ -1,8 +1,15 @@
-# main.py: Este é o arquivo principal do seu aplicativo, onde você instancia e executa o controller.
 
+import sys
+sys.path.append('models')
+sys.path.append('views')    
+sys.path.append('controllers')
+from Model.models import PontoTuristicoDAO
+from Controller.controllers import TouristaController
 
-from Controller import Controller
+def main():
+    ponto_turistico_dao = PontoTuristicoDAO('pontos_turisticos.json')
+    tourista_controller = TouristaController(ponto_turistico_dao)
+    tourista_controller.main()
 
 if __name__ == "__main__":
-    controller = Controller()
-    controller.executar()
+    main()
