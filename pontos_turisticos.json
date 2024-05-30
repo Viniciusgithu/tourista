@@ -111,6 +111,13 @@
             "descricao": "Bruce lee",
             "horario_funcionamento": "24h",
             "custo_entrada": "gratis"
+        },
+        {
+            "nome": "vale da lua",
+            "local": "Goiás",
+            "descricao": "O Vale da Lua é uma formação rochosa única localizada na Chapada dos Veadeiros, no estado de Goiás. Recebeu esse nome devido à aparência de sua paisagem, que lembra a superfície lunar. As rochas cinzentas esculpidas ao longo de milhares de anos pelas águas do Rio São Miguel criaram piscinas naturais, pequenos cânions e cavernas. O Vale da Lua é um destino popular entre os amantes da natureza, fotógrafos e aventureiros que procuram explorar suas formações geológicas fascinantes e se refrescar nas piscinas naturais. A trilha para o Vale da Lua é relativamente curta e de fácil acesso, tornando este um passeio ideal para visitantes de todas as idades.",
+            "horario_funcionamento": "8h às 17h",
+            "custo_entrada": "R$ 20"
         }
     ]
 }

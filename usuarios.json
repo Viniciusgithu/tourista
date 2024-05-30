@@ -1,0 +1,10 @@
+{
+   "usuarios": [
+      {
+         "nome_usuario": "Vinicius",
+         "senha": "12345678",
+         "palavra_chave": "Tourista",
+         "genero": "Masculino"
+      }
+   ]
+}

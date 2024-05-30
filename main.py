@@ -1,15 +1,15 @@
-
 import sys
-sys.path.append('models')
-sys.path.append('views')    
-sys.path.append('controllers')
-from Model.models import PontoTuristicoDAO
-from Controller.controllers import TouristaController
+from Controller.controllerUsuario import GerenciadorArquivosController
+
+sys.path.append('controller')
+sys.path.append('view')
+sys.path.append('model')
 
 def main():
-    ponto_turistico_dao = PontoTuristicoDAO('pontos_turisticos.json')
-    tourista_controller = TouristaController(ponto_turistico_dao)
-    tourista_controller.main()
+    gerenciador = GerenciadorArquivosController()
+    gerenciador.menu()
+
 
 if __name__ == "__main__":
     main()
+    
