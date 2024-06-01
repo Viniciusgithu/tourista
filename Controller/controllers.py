@@ -11,7 +11,7 @@ class TouristaController:
             if ponto_turistico.nome.lower() == ponto.lower():                
                 print("=" * 100)
                 print("")
-                print("Informações do ponto turistico: {ponto_turistico.nome}")
+                print(f"Informações do ponto turistico: {ponto.lower()}")
                 print("")
                 print(f"  Nome: {ponto_turistico.nome}")
                 print(f"  Local: {ponto_turistico.local}")
@@ -49,22 +49,52 @@ class TouristaController:
             print("=" * 100)
             if opcao == "1":
                 ponto = 'recife antigo'
-                self.mostrar_informacoes(ponto)
+                cidade = self.mostrar_informacoes(ponto)
+                if cidade != "":
+                    avaliacoes_dao = AvaliacoesDAO('reviews.json')    
+                    avaliacoes_controller = AvaliacoesController(avaliacoes_dao)
+                    avaliacoes_controller.run_menu(cidade, usrLogado) 
+                    continue                 
             elif opcao == "2":
                 ponto = 'Alto da Sé'
-                self.mostrar_informacoes(ponto)
+                cidade = self.mostrar_informacoes(ponto)
+                if cidade != "":
+                    avaliacoes_dao = AvaliacoesDAO('reviews.json')    
+                    avaliacoes_controller = AvaliacoesController(avaliacoes_dao)
+                    avaliacoes_controller.run_menu(cidade, usrLogado) 
+                    continue   
             elif opcao == '3':
                 ponto = 'Cristo Redentor'
-                self.mostrar_informacoes(ponto)
+                cidade = self.mostrar_informacoes(ponto)
+                if cidade != "":
+                    avaliacoes_dao = AvaliacoesDAO('reviews.json')    
+                    avaliacoes_controller = AvaliacoesController(avaliacoes_dao)
+                    avaliacoes_controller.run_menu(cidade, usrLogado) 
+                    continue   
             elif opcao == '4':
                 ponto = 'Torre Eiffel'
-                self.mostrar_informacoes(ponto)
+                cidade = self.mostrar_informacoes(ponto)
+                if cidade != "":
+                    avaliacoes_dao = AvaliacoesDAO('reviews.json')    
+                    avaliacoes_controller = AvaliacoesController(avaliacoes_dao)
+                    avaliacoes_controller.run_menu(cidade, usrLogado) 
+                    continue   
             elif opcao == '5':
                 ponto = 'Coliseu'
-                self.mostrar_informacoes(ponto)
+                cidade = self.mostrar_informacoes(ponto)
+                if cidade != "":
+                    avaliacoes_dao = AvaliacoesDAO('reviews.json')    
+                    avaliacoes_controller = AvaliacoesController(avaliacoes_dao)
+                    avaliacoes_controller.run_menu(cidade, usrLogado) 
+                    continue   
             elif opcao == '6':
                 ponto = 'Palacio de Buckingham'
-                self.mostrar_informacoes(ponto)
+                cidade = self.mostrar_informacoes(ponto)
+                if cidade != "":
+                    avaliacoes_dao = AvaliacoesDAO('reviews.json')    
+                    avaliacoes_controller = AvaliacoesController(avaliacoes_dao)
+                    avaliacoes_controller.run_menu(cidade, usrLogado) 
+                    continue   
             elif opcao == '7':
                 while True:
                     MenuView.mostrar_menuBusca()

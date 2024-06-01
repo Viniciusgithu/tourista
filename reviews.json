@@ -38,5 +38,10 @@
         "usuario": "arlle",
         "cidade": "vale da lua",
         "avaliacao": 5
+    },
+    {
+        "usuario": "arlle",
+        "cidade": "cristo redentor",
+        "avaliacao": 5
     }
 ]

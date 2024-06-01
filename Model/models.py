@@ -149,7 +149,7 @@ class AvaliacoesDAO:
             media_avaliacoes = 0 
 
         if (num_cidade_users > 0):
-            return (f"  O número de pessoas que avaliaram foram: {num_cidade_users}, e a avaliação está com uma média de {media_avaliacoes}")
+            return (f"  O número de pessoas que avaliaram foram: {num_cidade_users}, e a avaliação está com uma média de {media_avaliacoes:.1f}")
         else:
            return (f"  A cidade {cidade} ainda não foi avalida.")        
         
