@@ -9,7 +9,6 @@ def main():
     gerenciador = GerenciadorArquivosController()
     gerenciador.menu()
 
-
 if __name__ == "__main__":
     main()
     

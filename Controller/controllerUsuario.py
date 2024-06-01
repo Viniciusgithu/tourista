@@ -15,7 +15,7 @@ class GerenciadorArquivosController: # Criando a classe gerenciadora
             for usuario in self.model.credenciais['usuarios']: # Procurar o usuário no arquivo json
                 if usuario['nome_usuario'] == nome_usuario and usuario['senha'] == senha:
                     self.view.obter_mensagem("Login Efetuado!") # Achou o usuário e fez a verificação
-                    return executa() 
+                    return executa(nome_usuario) 
 
             self.view.obter_mensagem("Login ou senha inválidos") # Não encontrado no arquivo json
             self.voltar_menu_opcao() # Função que chama a opção de retorno 

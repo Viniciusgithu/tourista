@@ -6,6 +6,7 @@
 # Interage com o banco de dados;
 # Representa o estado atual da aplicação.
 import json
+import os
 
 class PontoTuristico:
     def __init__(self, nome, local, descricao, horario_funcionamento, custo_entrada):
@@ -67,3 +68,90 @@ class PontoTuristicoDAO:
         pontos_turisticos = self.carregar_pontos_turisticos()
         pontos_turisticos = [ponto for ponto in pontos_turisticos if ponto.nome.lower() != nome.lower()]
         self.salvar_pontos_turisticos(pontos_turisticos)
+
+class AvaliacoesUsuario:
+    def __init__(self, nome_usuario, cidade, avaliacao):
+        self.nome_usuario = nome_usuario.lower()
+        self.cidade = cidade.lower()
+        self.avaliacao = avaliacao
+
+class AvaliacoesDAO:
+    def __init__(self, file_path):
+        self.file_path = file_path
+
+    def load_json(self):
+        if os.path.exists(self.file_path):
+            with open(self.file_path, 'r') as file:
+                return json.load(file)
+        return []
+    
+    def salva_avaliacao(self, data):
+        with open(self.file_path, 'w') as file:
+            json.dump(data, file, indent=4)
+    
+    def adicionar_avaliacoes(self, nova_avaliacao):
+        reviews = self.load_json()
+        reviews.append({'usuario': nova_avaliacao.nome_usuario, 'cidade': nova_avaliacao.cidade, 'avaliacao': nova_avaliacao.avaliacao})
+        self.salva_avaliacao(reviews)
+        print("Avaliação salva com sucesso!!")
+
+    def editar_avaliacoes(self, avaliacao):
+        reviews = self.load_json()
+        for review in reviews:
+            if review['usuario'] == avaliacao.nome_usuario.lower() and review['cidade'] == avaliacao.cidade.lower():
+                review['avaliacao'] = avaliacao.avaliacao
+                self.salva_avaliacao(reviews)
+                print("Avaliação salva com sucesso!!")
+                return True  
+        return False    
+
+    def excluir_avaliacoes(self, avaliacao):
+        reviews = self.load_json()
+        updated_reviews = []
+        for review in reviews:
+            if not (review['usuario'] == avaliacao.nome_usuario.lower() and review['cidade'] == avaliacao.cidade.lower()):
+                usr = review['usuario']
+                cid =  review['cidade']
+                ava = review['avaliacao']                
+                updated_reviews.append({'usuario': usr, 'cidade': cid, 'avaliacao': ava})             
+            
+        self.salva_avaliacao(updated_reviews)
+        print("Avaliação excluida com sucesso!!")
+        return True
+
+    # def read_reviews(self, cidade):
+    #     reviews = self.load_json()
+    #     return [review for review in reviews if review['ponto'] == cidade]
+
+    # def delete_review(self, review_id):
+    #     reviews = self.load_json()
+    #     updated_reviews = [review for review in reviews if review['id'] != review_id]
+    #     if len(reviews) == len(updated_reviews):
+    #         return False
+    #     else:
+    #         self.save_json(updated_reviews)
+    #         return True  
+        
+    def exibir_avaliacao(self, cidade):
+        reviews = self.load_json()       
+        
+        # Filtrar os usuários que voltaram na cidade informada no paramentro
+        cidade_users = [item for item in reviews if item["cidade"] == cidade]
+        
+        # Contar quantos usuários voltaram na cidade informada no paramentro
+        num_cidade_users = len(cidade_users)        
+       
+        # Calcular a média aritmética das avaliações dos usuários que visitaram a cidade
+        if num_cidade_users > 0:
+            total_avaliacoes = sum(item["avaliacao"] for item in cidade_users)
+            media_avaliacoes = total_avaliacoes / num_cidade_users
+        else:
+            media_avaliacoes = 0 
+
+        if (num_cidade_users > 0):
+            return (f"  O número de pessoas que avaliaram foram: {num_cidade_users}, e a avaliação está com uma média de {media_avaliacoes}")
+        else:
+           return (f"  A cidade {cidade} ainda não foi avalida.")        
+        
+           
+

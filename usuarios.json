@@ -5,6 +5,18 @@
          "senha": "12345678",
          "palavra_chave": "Tourista",
          "genero": "Masculino"
+      },
+      {
+         "nome_usuario": "arlle",
+         "senha": "arlle123",
+         "palavra_chave": "vini",
+         "genero": "Masculino"
+      },
+      {
+         "nome_usuario": "ggds",
+         "senha": "arlle123",
+         "palavra_chave": "vini",
+         "genero": "Masculino"
       }
    ]
 }

@@ -1,0 +1,42 @@
+[
+    {
+        "usuario": "Arllesson",
+        "cidade": "olinda",
+        "avaliacao": 5
+    },
+    {
+        "usuario": "Getulio",
+        "cidade": "olinda",
+        "avaliacao": 4
+    },
+    {
+        "usuario": "Rosineide",
+        "cidade": "recife antigo",
+        "avaliacao": 3
+    },
+    {
+        "usuario": "Rosineide",
+        "cidade": "palacio de buckingham",
+        "avaliacao": 4
+    },
+    {
+        "usuario": "arlle",
+        "cidade": "recife antigo",
+        "avaliacao": 1
+    },
+    {
+        "usuario": "ggds",
+        "cidade": "recife antigo",
+        "avaliacao": 1
+    },
+    {
+        "usuario": "ggds",
+        "cidade": "vale da lua",
+        "avaliacao": 5
+    },
+    {
+        "usuario": "arlle",
+        "cidade": "vale da lua",
+        "avaliacao": 5
+    }
+]
