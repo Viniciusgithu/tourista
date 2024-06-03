@@ -14,11 +14,16 @@ class TouristaController:
                 print(f"Informações do ponto turistico: {ponto.lower()}")
                 print("")
                 print("Nome: {}".format(ponto_turistico.nome.upper()))
+                print("")
                 print(f"  Local: {ponto_turistico.local}")
+                print("")
                 print(f"  Descrição: {ponto_turistico.descricao}")
+                print("")
                 print(f"  Horário de Funcionamento: {ponto_turistico.horario_funcionamento}")
+                print("")
                 print(f"  Custo de Entrada: {ponto_turistico.custo_entrada}")
-                oAvaliacoesDAO = AvaliacoesDAO('reviews.json') 
+                oAvaliacoesDAO = AvaliacoesDAO('reviews.json')
+                print("")
                 print(oAvaliacoesDAO.exibir_avaliacao(ponto_turistico.nome))                               
                 print("")
                 print("=" * 100)
@@ -179,7 +184,7 @@ class AvaliacoesController:
                     continue       
                          
                 while True:
-                    avaliacao = int( input("Nota (0-5): ") )
+                    avaliacao = float( input("Nota (0-5): ") )
                     if avaliacao < 0 or avaliacao > 5:
                         print("Informa um valor entre (0-5)")
                         continue

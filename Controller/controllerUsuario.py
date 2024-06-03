@@ -9,13 +9,13 @@ class GerenciadorArquivosController: # Criando a classe gerenciadora
     
     def login(self):
         while True:
-            nome_usuario = self.view.entrada("nome do usuário: ")
+            nome_usuario = self.view.entrada("Nome do Usuário: ")
             senha = self.view.entrada("Senha: ")
 
             for usuario in self.model.credenciais['usuarios']: # Procurar o usuário no arquivo json
                 if usuario['nome_usuario'] == nome_usuario and usuario['senha'] == senha:
                     self.view.obter_mensagem("Login Efetuado!") # Achou o usuário e fez a verificação
-                    return executa(nome_usuario) 
+                    return executa(nome_usuario)
 
             self.view.obter_mensagem("Login ou senha inválidos") # Não encontrado no arquivo json
             self.voltar_menu_opcao() # Função que chama a opção de retorno 
@@ -47,14 +47,14 @@ class GerenciadorArquivosController: # Criando a classe gerenciadora
         
         self.view.obter_mensagem("OBS: A palavra chave será seu acesso para quando esquecer a senha!")
         palavra_chave = self.view.entrada("Escolha uma palavra chave: ") # Usada para senha esquecida
-        genero = self.view.entrada("Qual o seu gênero (0 - Masculino | 1 - Feminino  | 2 - Outro)? ") # Concedendo um gênero ao perfil, usado nas avaliações
+        genero = self.view.entrada("Qual o seu gênero (0 - Masculino | 1 - Feminino  | 2 - Outros)? ") # Concedendo um gênero ao perfil, usado nas avaliações
         if genero == "0":
             palavra_genero = "Masculino" # Transformando o número entrado na palavra, para salvar no json
         elif genero == "1":
             palavra_genero = "Feminino"
         
         elif genero == "2":
-            palavra_genero = "Outro"
+            palavra_genero = "Outros"
 
         
         self.model.credenciais['usuarios'].append({"nome_usuario": nome_usuario, "senha": senha, "palavra_chave": palavra_chave, "genero": palavra_genero} ) # Adição de credenciais no json
@@ -101,6 +101,7 @@ class GerenciadorArquivosController: # Criando a classe gerenciadora
                         self.model.credenciais['usuarios'].remove(usuario) # Remove o usuario
                         self.model.salvar_usuarios() # Salva as alterações
                         self.view.obter_mensagem("Turista removido com sucesso!")
+                        print("")
                         return
                     elif opcao_diminutivo in ('nao', 'n', "não"): # Caso for negado:
                         self.view.obter_mensagem("Turista não removido")
@@ -108,9 +109,7 @@ class GerenciadorArquivosController: # Criando a classe gerenciadora
                         self.excluir_conta() # Caso rejeitado, retornar a função de excluir conta
                         return
                         
-
-                        
-                    else: 
+                    else:
                         self.view.obter_mensagem("Digite apenas 'sim' ou 'nao'") # Caso não digite o fornecido
                 
         self.view.obter_mensagem("Usuário ou senha incorreto(s)") # Caso não ache o usuário no json
@@ -127,17 +126,24 @@ class GerenciadorArquivosController: # Criando a classe gerenciadora
             if usuario['nome_usuario'] == nome_usuario and usuario['senha'] == senha: # Confirmação do usuário:
                 self.view.obter_mensagem("Usuário confirmado") 
                 print("")
-                self.view.obter_mensagem("O que desejas alterar no perfil?\n1. Nome do usuário\n2. Senha\n3. Gênero") # Opções que poderão ser alteradas
-                opcao = self.view.entrada("Digite uma opção: ")
+                while True:
+                    self.view.obter_mensagem("O que desejas alterar no perfil?\n1. Nome do usuário\n2. Senha\n3. Gênero") # Opções que poderão ser alteradas
+                    opcao = self.view.entrada("Digite uma opção: ")
 
-                if opcao == '1':
-                    self.alterar_nome(usuario)
+                    if opcao == '1':
+                        self.alterar_nome(usuario)
 
-                elif opcao == '2':
-                    self.alterar_senha(usuario)
-                
-                elif opcao == '3':
-                    self.alterar_genero(usuario)
+                    elif opcao == '2':
+                        self.alterar_senha(usuario)
+                    
+                    elif opcao == '3':
+                        self.alterar_genero(usuario)
+
+                    else:
+                        print("Digite de 1 a 3.")
+                        self.voltar_menu_opcao()
+                        continue
+
             
         self.view.obter_mensagem("Usuário não encontrado") # Caso o usuario ou senha não seja encontrada no json
         self.voltar_menu_opcao() # Opção de voltar ao menu
@@ -205,8 +211,9 @@ class GerenciadorArquivosController: # Criando a classe gerenciadora
 
     def menu(self): # Função do menu
         while True:
-            self.view.obter_mensagem("----Bem vindo ao Tourista!!----")
+            self.view.obter_mensagem("---- ✈️ 🧳 Bem vindo ao Tourista ✈️ 🧳----")
             self.view.obter_mensagem("\n1. Login\n2. Registrar\n3. Esqueci a senha\n4. Excluir conta\n5. Editar o usuário") # Opções existentes da tela inicial
+            print("")
             opcao = input("Digite uma opção: ")
 
             if opcao == '1':
@@ -229,7 +236,7 @@ class GerenciadorArquivosController: # Criando a classe gerenciadora
     
     def voltar_menu_opcao(self): # Função de voltar ao menu
         while True:
-            opcao = self.view.entrada("Deseja voltar a tela inicial ('s' para confirmar, 'n' para negar)? ").strip().lower() # Entrada se quer sair ou não, deixando a entrada minúscula e sem espaços
+            opcao = self.view.entrada("Deseja voltar ao menu inicial ('s' para confirmar, 'n' para negar)? ").strip().lower() # Entrada se quer sair ou não, deixando a entrada minúscula e sem espaços
             if opcao in ('s', 'sim'):
                 self.menu() # Caso queira sair, retorna ao menu inicial
             elif opcao in ('n', 'nao', 'não'):

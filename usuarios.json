@@ -13,9 +13,21 @@
          "genero": "Masculino"
       },
       {
-         "nome_usuario": "ggds",
-         "senha": "arlle123",
-         "palavra_chave": "vini",
+         "nome_usuario": "Marcello",
+         "senha": "12345678",
+         "palavra_chave": "sucesso",
+         "genero": "Masculino"
+      },
+      {
+         "nome_usuario": "Yuri",
+         "senha": "87654321",
+         "palavra_chave": "sport",
+         "genero": "Outros"
+      },
+      {
+         "nome_usuario": "Hugo",
+         "senha": "12345876",
+         "palavra_chave": "Naufrago",
          "genero": "Masculino"
       }
    ]
