@@ -13,7 +13,7 @@ class TouristaController:
                 print("")
                 print(f"Informações do ponto turistico: {ponto.lower()}")
                 print("")
-                print(f"  Nome: {ponto_turistico.nome}")
+                print("Nome: {}".format(ponto_turistico.nome.upper()))
                 print(f"  Local: {ponto_turistico.local}")
                 print(f"  Descrição: {ponto_turistico.descricao}")
                 print(f"  Horário de Funcionamento: {ponto_turistico.horario_funcionamento}")
@@ -48,7 +48,7 @@ class TouristaController:
             opcao = MenuView.obter_opcao()
             print("=" * 100)
             if opcao == "1":
-                ponto = 'recife antigo'
+                ponto = 'Recife Antigo'
                 cidade = self.mostrar_informacoes(ponto)
                 if cidade != "":
                     avaliacoes_dao = AvaliacoesDAO('reviews.json')    

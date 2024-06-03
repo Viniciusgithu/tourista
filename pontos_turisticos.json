@@ -8,6 +8,13 @@
             "custo_entrada": "Gratuito"
         },
         {
+            "nome": "alto da sé",
+            "local": "Olinda, Pernambuco - Brasil",
+            "descricao": "O Alto da Sé é um dos pontos turísticos mais icônicos de Olinda, oferecendo vistas panorâmicas deslumbrantes da cidade e do mar. Além da vista espetacular, o local abriga a histórica Igreja da Sé, construída no século XVI, e várias feirinhas de artesanato e gastronomia local.",
+            "horario_funcionamento": "Livre",
+            "custo_entrada": "Gratuito"
+        },
+        {
             "nome": "parque das ruínas",
             "local": "Pernambuco - Brasil",
             "descricao": "Parque com áreas verdes e ruínas históricas.",
@@ -125,6 +132,160 @@
             "descricao": "teste",
             "horario_funcionamento": "24h",
             "custo_entrada": "gratis"
+        },
+        {
+            "nome": "parque nacional do itatiaia",
+            "local": "Rio de Janeiro - Brasil",
+            "descricao": "O Parque Nacional do Itatiaia é o mais antigo parque nacional do Brasil, conhecido por suas trilhas, cachoeiras e rica biodiversidade.",
+            "horario_funcionamento": "7:00 - 17:00",
+            "custo_entrada": "R$ 36,00"
+        },
+        {
+            "nome": "valle de la luna",
+            "local": "San Pedro de Atacama - Chile",
+            "descricao": "Uma paisagem desértica que lembra a superfície lunar, famosa por suas formações rochosas e dunas de areia.",
+            "horario_funcionamento": "9:00 - 17:00",
+            "custo_entrada": "3.000 CLP"
+        },
+        {
+            "nome": "antelope canyon",
+            "local": "Arizona - EUA",
+            "descricao": "Um desfiladeiro estreito e cênico conhecido por suas formações rochosas ondulantes e a luz que penetra pelas aberturas no topo.",
+            "horario_funcionamento": "8:00 - 17:00 (visitas guiadas)",
+            "custo_entrada": "40 USD"
+        },
+        {
+            "nome": "caminito del rey",
+            "local": "Málaga - Espanha",
+            "descricao": "Uma trilha de passarelas suspensas ao longo das paredes de um desfiladeiro estreito, oferecendo vistas espetaculares.",
+            "horario_funcionamento": "9:30 - 15:00",
+            "custo_entrada": "10 EUR"
+        },
+        {
+            "nome": "templo de borobudur",
+            "local": "Magelang - Indonésia",
+            "descricao": "O maior templo budista do mundo, famoso por suas estupas e relevos esculpidos.",
+            "horario_funcionamento": "6:00 - 17:00",
+            "custo_entrada": "25 USD"
+        },
+        {
+            "nome": "parque nacional kruger",
+            "local": "Mpumalanga - África do Sul",
+            "descricao": "Um dos maiores parques de preservação de vida selvagem na África, conhecido por seus safáris e diversidade de animais.",
+            "horario_funcionamento": "5:30 - 18:30",
+            "custo_entrada": "R 400"
+        },
+        {
+            "nome": "milford sound",
+            "local": "Fiordland - Nova Zelândia",
+            "descricao": "Um fiorde espetacular conhecido por suas montanhas íngremes, cachoeiras e vida selvagem marinha.",
+            "horario_funcionamento": "24 horas",
+            "custo_entrada": "Gratuito"
+        },
+        {
+            "nome": "caverna de postojna",
+            "local": "Postojna - Eslovênia",
+            "descricao": "Uma das maiores cavernas da Europa, famosa por suas estalactites e estalagmites impressionantes.",
+            "horario_funcionamento": "10:00 - 16:00",
+            "custo_entrada": "27,90 EUR"
+        },
+        {
+            "nome": "cataratas do iguaçu",
+            "local": "Foz do Iguaçu, Paraná - Brasil",
+            "descricao": "Um dos maiores e mais impressionantes conjuntos de quedas d'água do mundo, localizado na fronteira entre o Brasil e a Argentina.",
+            "horario_funcionamento": "9:00 - 17:00",
+            "custo_entrada": "R$ 45,00"
+        },
+        {
+            "nome": "parque nacional torres del paine",
+            "local": "Patagônia - Chile",
+            "descricao": "Um parque nacional famoso por suas montanhas majestosas, lagos azuis e glaciais, ideal para trilhas e aventuras ao ar livre.",
+            "horario_funcionamento": "7:00 - 20:00",
+            "custo_entrada": "21.000 CLP"
+        },
+        {
+            "nome": "parque nacional de yosemite",
+            "local": "Califórnia - EUA",
+            "descricao": "Conhecido por suas impressionantes falésias de granito, cachoeiras e sequoias gigantes, é um dos parques nacionais mais visitados dos EUA.",
+            "horario_funcionamento": "24 horas",
+            "custo_entrada": "35 USD"
+        },
+        {
+            "nome": "castelo de neuschwanstein",
+            "local": "Baviera - Alemanha",
+            "descricao": "Um castelo de conto de fadas construído no século XIX, famoso por sua arquitetura romântica e vistas deslumbrantes.",
+            "horario_funcionamento": "9:00 - 18:00",
+            "custo_entrada": "13 EUR"
+        },
+        {
+            "nome": "templo de karnak",
+            "local": "Luxor - Egito",
+            "descricao": "Um complexo de templos antigos dedicado ao deus Amon, famoso por suas colunas gigantes e relevos intricados.",
+            "horario_funcionamento": "6:00 - 17:00",
+            "custo_entrada": "200 EGP"
+        },
+        {
+            "nome": "ilhas phi phi",
+            "local": "Krabi - Tailândia",
+            "descricao": "Um arquipélago paradisíaco conhecido por suas praias de areia branca, águas cristalinas e vida marinha vibrante.",
+            "horario_funcionamento": "24 horas",
+            "custo_entrada": "Gratuito"
+        },
+        {
+            "nome": "table mountain",
+            "local": "Cidade do Cabo - África do Sul",
+            "descricao": "Uma montanha icônica com um topo plano, oferecendo vistas panorâmicas da Cidade do Cabo e do oceano.",
+            "horario_funcionamento": "8:00 - 20:00",
+            "custo_entrada": "290 ZAR"
+        },
+        {
+            "nome": "uluru",
+            "local": "Território do Norte - Austrália",
+            "descricao": "Uma formação rochosa monolítica sagrada para os aborígenes australianos, famosa por suas cores vibrantes ao nascer e ao pôr do sol.",
+            "horario_funcionamento": "5:00 - 21:00",
+            "custo_entrada": "38 AUD"
+        },
+        {
+            "nome": "parque nacional de plitvice",
+            "local": "Croácia",
+            "descricao": "Um parque nacional famoso por seus lagos em cascata, cachoeiras e trilhas cênicas.",
+            "horario_funcionamento": "8:00 - 18:00",
+            "custo_entrada": "300 HRK"
+        },
+        {
+            "nome": "parque nacional de serengeti",
+            "local": "Tanzânia",
+            "descricao": "Um dos parques de vida selvagem mais famosos do mundo, conhecido por suas migrações anuais de gnus e grande diversidade de animais.",
+            "horario_funcionamento": "6:00 - 18:00",
+            "custo_entrada": "60 USD"
+        },
+        {
+            "nome": "montanhas rochosas",
+            "local": "Alberta - Canadá",
+            "descricao": "Uma vasta cordilheira que oferece paisagens deslumbrantes, trilhas, lagos alpinos e vida selvagem diversificada.",
+            "horario_funcionamento": "24 horas",
+            "custo_entrada": "Gratuito"
+        },
+        {
+            "nome": "parque nacional de banff",
+            "local": "Alberta - Canadá",
+            "descricao": "Um parque nacional famoso por suas montanhas majestosas, lagos cristalinos e vida selvagem abundante.",
+            "horario_funcionamento": "24 horas",
+            "custo_entrada": "20 CAD"
+        },
+        {
+            "nome": "blyde river canyon",
+            "local": "Mpumalanga - África do Sul",
+            "descricao": "Um dos maiores cânions do mundo, conhecido por suas formações rochosas dramáticas e vistas espetaculares.",
+            "horario_funcionamento": "8:00 - 17:00",
+            "custo_entrada": "35 ZAR"
+        },
+        {
+            "nome": "casa rosada",
+            "local": "Buenos Aires",
+            "descricao": "Local da sede do governo do País, e de visitação aos turistas de parte da sede do governo diariamente, principalmente nos finais de semana. Um ótimo passeio para quem viaja em família e deseja conhecer um pouco da história politica do País.",
+            "horario_funcionamento": "08:00 as 17:00hs sábados e domingos.",
+            "custo_entrada": "Gratuito - Bastando acessar o site oficial e efetuando seu agendamento."
         }
     ]
 }
