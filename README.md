@@ -3,10 +3,6 @@
 </h1>
 
 
-<h4 align="center">
-    🚧 Construção 🚧
-</h4>
-
 <br>
 <br>
 <br>
@@ -42,10 +38,10 @@ O projeto foi desenvolvido a partir das seguintes tarefas:
 - [x] Definir modelos de dados - por exemplo, pontos turísticos, avaliações, perfis de usuários;
 - [x] Definir modelos de dados - por exemplo, pontos turísticos, avaliações, perfis de usuários;
 - [x] Desenvolver o documento de requisitos;
-- [ ] Desenvolver os componentes do sistema;
-- [ ] Definir o time de arquitetura a ser implementada;
-- [ ] Revisão do código e corrigir possíveis problemáticas;
-- [ ] Apresentação do SR2.
+- [x] Desenvolver os componentes do sistema;
+- [x] Definir o time de arquitetura a ser implementada;
+- [x] Revisão do código e corrigir possíveis problemáticas;
+- [x] Apresentação do SR2.
 
 
 
