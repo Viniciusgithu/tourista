@@ -127,7 +127,7 @@
             "custo_entrada": "R$ 20"
         },
         {
-            "nome": "jamga",
+            "nome": "janga",
             "local": "paulista",
             "descricao": "teste",
             "horario_funcionamento": "24h",
@@ -286,6 +286,13 @@
             "descricao": "Local da sede do governo do País, e de visitação aos turistas de parte da sede do governo diariamente, principalmente nos finais de semana. Um ótimo passeio para quem viaja em família e deseja conhecer um pouco da história politica do País.",
             "horario_funcionamento": "08:00 as 17:00hs sábados e domingos.",
             "custo_entrada": "Gratuito - Bastando acessar o site oficial e efetuando seu agendamento."
+        },
+        {
+            "nome": "casa",
+            "local": "",
+            "descricao": "",
+            "horario_funcionamento": "",
+            "custo_entrada": ""
         }
     ]
 }

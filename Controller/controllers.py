@@ -133,6 +133,9 @@ class TouristaController:
                     elif sub_opcao == "4":
                         nome = input("Digite o nome do ponto turístico a ser excluído: ").lower()
                         self.excluir_ponto_turistico(nome)
+                        print("")
+                        print(f"Ponto turístico: {nome}, foi excluído com sucesso! ")
+                        print("====================================================================================================")
 
                     elif sub_opcao == "0":
                         break

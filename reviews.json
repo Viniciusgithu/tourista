@@ -18,5 +18,15 @@
         "usuario": "vinicius",
         "cidade": "casa rosada",
         "avaliacao": 5
+    },
+    {
+        "usuario": "yuri",
+        "cidade": "cristo redentor",
+        "avaliacao": 5.0
+    },
+    {
+        "usuario": "yuri",
+        "cidade": "torre eiffel",
+        "avaliacao": 4.0
     }
 ]
